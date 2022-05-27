@@ -1,0 +1,39 @@
+* {
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+}
+
+/* THESE ENSURE THE WEBVIEW WILL BE OF CORRECT HEIGHT
+  * =======================================================================
+  */
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body :first-child {
+    margin-top: 0px;
+}
+
+/* PREVENTS HORIZONTAL SCROLLING 
+   * =======================================================================
+  */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* MAIN STYLING
+  * =======================================================================
+  */
+
+body {
+    padding: 16px;
+}

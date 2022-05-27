@@ -21,9 +21,13 @@ body :first-child {
     margin-top: 0px;
 }
 
-/* PREVENTS HORIZONTAL SCROLLING 
-   * =======================================================================
-  */
+body :last-child {
+    margin-bottom: 0px;
+}
+
+/* FIXES SCROLLING 
+ * =======================================================================
+ */
 
 html,
 body {
@@ -31,9 +35,139 @@ body {
 }
 
 /* MAIN STYLING
-  * =======================================================================
-  */
+ * =======================================================================
+ */
+
+:root {
+    --default-text-color: #333333;
+    --muted-text-color: #666666;
+    --link-color: #f05675;
+
+    --muted-border-color: #dddddd;
+    --muted-background-color: #eeeeee;
+
+    --codeblock-background-color: #222222;
+    --codeblock-text-color: #ffffff;
+}
 
 body {
     padding: 16px;
+
+    line-height: 1.5rem;
+    color: var(--default-text-color);
+
+    word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.45rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+}
+
+h1,
+h2 {
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--muted-border-color);
+}
+
+ul,
+ol {
+    padding-inline-start: 1.8rem;
+}
+
+a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    color: var(--link-color);
+}
+
+del {
+    color: var(--muted-text-color);
+}
+
+pre {
+    padding: 1rem;
+    border-radius: 4px;
+
+    color: var(--codeblock-text-color);
+    background-color: var(--codeblock-background-color);
+
+    overflow-x: auto;
+}
+
+:not(pre)>code {
+    background-color: var(--muted-background-color);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+}
+
+blockquote {
+    margin-inline: 0px;
+    padding-block: 12px;
+    padding-left: 16px;
+
+    color: var(--muted-text-color);
+    border-left: 2px solid var(--muted-border-color);
+    font-style: italic;
+}
+
+blockquote :last-child {
+    margin-bottom: 0px;
+}
+
+
+table {
+    display: block;
+    overflow-x: auto;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.6rem 1rem;
+}
+
+th,
+td {
+    border: 1px solid var(--muted-border-color)
+}
+
+th {
+    font-size: 1rem;
+    background-color: var(--muted-background-color);
+    border-bottom-width: 2px;
+}
+
+img {
+    max-width: 100%;
 }

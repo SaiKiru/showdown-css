@@ -94,19 +94,28 @@
   </ol>
   <h2 id="checkboxlists">Checkbox Lists</h2>
   <ul>
-    <li>[ ] item 1</li>
-    <li>[x] item 2<ul>
-        <li>[ ] nested item 1</li>
-        <li>[x] nested item 2<ul>
-            <li>[x] deeper nested item</li>
-            <li>[ ] deeper nested item</li>
+    <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+        style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> item 1</li>
+    <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+        style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;" checked=""> item 2<ul>
+        <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+            style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> nested item 1</li>
+        <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+            style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;" checked=""> nested item 2<ul>
+            <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+                style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;" checked=""> deeper nested item</li>
+            <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+                style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> deeper nested item</li>
           </ul>
         </li>
-        <li>[ ] nested item 3</li>
+        <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+            style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> nested item 3</li>
       </ul>
     </li>
-    <li>[ ] item 3</li>
-    <li>[x] item 4</li>
+    <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+        style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> item 3</li>
+    <li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled=""
+        style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;" checked=""> item 4</li>
   </ul>
   <h1 id="textformatting">Text Formatting</h1>
   <h2 id="summary">Summary</h2>
@@ -114,12 +123,12 @@
     <li><em>italics</em></li>
     <li><strong>bold</strong></li>
     <li><del>strikethrough</del></li>
-    <li>[link]()</li>
+    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a></li>
     <li><code>inline code</code></li>
     <li>Lorem ipsum <em>dolor</em> sit amet.</li>
     <li>Lorem ipsum <strong>dolor</strong> sit amet.</li>
     <li>Lorem ipsum <del>dolor</del> sit amet.</li>
-    <li>Lorem ipsum [dolor]() sit amet.</li>
+    <li>Lorem ipsum <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">dolor</a> sit amet.</li>
     <li>Lorem ipsum <code>dolor</code> sit amet.</li>
   </ul>
   <h1 id="blocks">Blocks</h1>
@@ -136,9 +145,9 @@
     mauris. Hendrerit dolor magna eget est lorem ipsum dolor sit. Faucibus a pellentesque sit amet porttitor eget dolor
     morbi non.</p>
   <pre><code class="java language-java">public class Main {
-public static void main(String[] args) {
-  System.out.println("Hello World!");
-}
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
 }
 </code></pre>
   <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Pretium aenean pharetra magna ac placerat vestibulum lectus

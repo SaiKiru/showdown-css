@@ -65,12 +65,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - _italics_
 - __bold__
 - ~~strikethrough~~
-- [link]()
+- [link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 - `inline code`
 - Lorem ipsum _dolor_ sit amet.
 - Lorem ipsum __dolor__ sit amet.
 - Lorem ipsum ~~dolor~~ sit amet.
-- Lorem ipsum [dolor]() sit amet.
+- Lorem ipsum [dolor](https://www.youtube.com/watch?v=dQw4w9WgXcQ) sit amet.
 - Lorem ipsum `dolor` sit amet.
 
 
